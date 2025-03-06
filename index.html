@@ -60,7 +60,7 @@
                 </span>
 
                 <span class="link-block">
-                  <a href="https://www.youtube.com/watch?v=DRFQBkR59KA" target="_blank"
+                  <a href="https://youtu.be/VFidNmSb9qU" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="fab fa-youtube"></i></span>
                   <span>YouTube</span>
@@ -82,10 +82,13 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              This paper proposes Constrained Sampling Cluster Model Predictive Path Integral (CSC-MPPI), a novel constrained formulation of MPPI designed to enhance trajectory optimization while enforcing strict constraints on system states and control inputs. 
+              This paper proposes Constrained Sampling Cluster Model Predictive Path Integral (CSC-MPPI), a novel constrained formulation of MPPI designed to enhance trajectory optimization while enforcing strict constraints on system states and control inputs.
               Traditional MPPI, which relies on a probabilistic sampling process, often struggles with constraint satisfaction and generates suboptimal trajectories due to the weighted averaging of sampled trajectories.
               To address these limitations, the proposed framework integrates a primal-dual gradient-based approach and Density-Based Spatial Clustering of Applications with Noise (DBSCAN) to steer sampled input trajectories into feasible regions while mitigating risks associated with weighted averaging.
-              Simulation and real-world experiments demonstrate that CSC-MPPI outperforms standard MPPI and other state-of-the-art algorithms in obstacle avoidance, achieving improved reliability and efficiency.
+              First, to ensure that sampled trajectories remain within the feasible region, the primal-dual gradient method is applied to iteratively shift sampled inputs while enforcing state and control constraints.
+              Then, DBSCAN groups the sampled trajectories, enabling the selection of representative control inputs within each cluster. Finally, among the representative control inputs, the one with the lowest cost is chosen as the optimal action.
+              As a result, CSC-MPPI guarantees constraint satisfaction, improves trajectory selection, and enhances robustness in complex environments.
+              Simulation and real-world experiments demonstrate that CSC-MPPI outperforms traditional MPPI in obstacle avoidance, achieving improved reliability and efficiency.
             </p>
           </div>
         </div>
@@ -101,7 +104,7 @@
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
             <div class="publication-video">
-              <iframe width="100%" height="400" src="https://www.youtube.com/embed/DRFQBkR59KA" frameborder="0" allowfullscreen></iframe>
+              <iframe width="100%" height="400" src="https://youtu.be/VFidNmSb9qU" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
