@@ -97,38 +97,65 @@
   </section>
 
   <!-- Code Optimization Section -->
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Update v1.1</h2>
-          <p class="is-size-5 has-text-grey-dark has-text-weight-light">
-            Computational Efficiency Improvements in CSC-MPPI
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Update v1.1</h2>
+        <p class="is-size-5 has-text-grey-dark has-text-weight-light">
+          Computational Efficiency Improvements in CSC-MPPI
+        </p>
+        <div class="content has-text-justified">
+          <p>
+            We performed a code-level optimization of the CSC-MPPI framework.
+            Quantitative results comparing the convergence time before and after the optimization are provided in the table below.
           </p>
-          <div class="content has-text-justified">
-            <p>
-              We performed a code-level optimization of the CSC-MPPI framework.
-              Quantitative results comparing the convergence time before and after the optimization are provided in the table below.
-            </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column">
+            <figure class="image">
+              <img src="static/images/before code optimization.png" alt="Before Code Optimization">
+              <figcaption>Before Optimization</figcaption>
+            </figure>
           </div>
-          <div class="columns is-centered">
-            <div class="column">
-              <figure class="image">
-                <img src="static/images/before code optimization.png" alt="Before Code Optimization">
-                <figcaption>Before Optimization</figcaption>
-              </figure>
-            </div>
-            <div class="column">
-              <figure class="image">
-                <img src="static/images/after code optimization.png" alt="After Code Optimization">
-                <figcaption>After Optimization</figcaption>
-              </figure>
-            </div>
+          <div class="column">
+            <figure class="image">
+              <img src="static/images/after code optimization.png" alt="After Code Optimization">
+              <figcaption>After Optimization</figcaption>
+            </figure>
           </div>
         </div>
+        
+        <!-- Update v1.2 -->
+        <h2 class="title is-3 mt-6">Update v1.2</h2>
+        <p class="is-size-5 has-text-grey-dark has-text-weight-light">
+          Migration from PyTorch to JAX
+        </p>
+        <div class="content has-text-justified">
+          <p>
+            In version 1.2, we migrated the entire CSC-MPPI framework from PyTorch to JAX to leverage accelerated computation and efficient automatic differentiation on both CPU and GPU. This transition significantly reduced the computation time per iteration.
+            The performance comparison before and after the migration is illustrated below.
+          </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column">
+            <figure class="image">
+              <img src="static/images/before jax.png" alt="Before JAX Migration">
+              <figcaption>PyTorch Implementation</figcaption>
+            </figure>
+          </div>
+          <div class="column">
+            <figure class="image">
+              <img src="static/images/after jax.png" alt="After JAX Migration">
+              <figcaption>JAX Implementation</figcaption>
+            </figure>
+          </div>
+        </div>
+        
       </div>
     </div>
-  </section>
+  </div>
+</section>
   
 
   <!-- Video Presentation -->
