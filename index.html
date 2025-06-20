@@ -133,24 +133,20 @@
         </p>
         <div class="content has-text-justified">
           <p>
-            In version 1.2, we migrated the entire CSC-MPPI framework from PyTorch to JAX to leverage accelerated computation and efficient automatic differentiation on both CPU and GPU. This transition significantly reduced the computation time per iteration.
-            The performance comparison before and after the migration is illustrated below.
+            In version 1.2, we reimplemented the CSC-MPPI framework using JAX instead of PyTorch.
+            This change enabled more efficient parallel computation and significantly improved runtime performance.
+            The results after migration are shown below.
           </p>
         </div>
         <div class="columns is-centered">
-          <div class="column">
+          <div class="column is-half">
             <figure class="image">
-              <img src="static/images/before jax.png" alt="Before JAX Migration">
-              <figcaption>PyTorch Implementation</figcaption>
-            </figure>
-          </div>
-          <div class="column">
-            <figure class="image">
-              <img src="static/images/after jax.png" alt="After JAX Migration">
-              <figcaption>JAX Implementation</figcaption>
+              <img src="static/images/jax computation speed.png" alt="Computation Speed with JAX">
+              <figcaption>Computation Speed after JAX Migration</figcaption>
             </figure>
           </div>
         </div>
+
         
       </div>
     </div>
